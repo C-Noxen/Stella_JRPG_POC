@@ -1,0 +1,43 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2482,
+      "kind": "pack",
+      "path": "PACK.json",
+      "sha256": "1929beb733be2cd1aec5d897e366de4cd3be91432ef96673de512221e60567ec"
+    },
+    {
+      "bytes": 17213,
+      "kind": "run",
+      "path": "RUN.json",
+      "sha256": "55e91c99389866695399c57ed49daaad14e87ba14f12c6c7276c139ac0b0d98b"
+    },
+    {
+      "bytes": 432,
+      "kind": "output",
+      "path": "OUTPUT.json",
+      "sha256": "5a70ee620ad3ffd0b4641ed0f94f9c8934a8a22a1438b419a68c4e4759d6472d"
+    },
+    {
+      "bytes": 68,
+      "kind": "decisions_index",
+      "path": "decisions/index.json",
+      "sha256": "5f6214d7d4bbcc0e7c39daa074ee761e35be71cd3f4e9df93bef15b8d6b5495a"
+    }
+  ],
+  "bundle_version": "0.1",
+  "created": "2026-01-29T06:10:45Z",
+  "exclusions": [
+    ".env",
+    ".env.*",
+    "*.key",
+    "*.pem",
+    "*.crt",
+    "*.p12",
+    "*.pfx",
+    "*.der",
+    "*_secret.*",
+    "*secret*"
+  ],
+  "schema": "stella.report.bundle.v0.1"
+}

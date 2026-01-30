@@ -1,0 +1,80 @@
+{
+  "contract_version": "0.1",
+  "project": {
+    "name": "Stella JRPG POC",
+    "repo": "Stella_JRPG_POC",
+    "owner": "Newuser"
+  },
+  "stage": {
+    "id": "stage-0-skeleton",
+    "policy": {
+      "present_tense_only": true,
+      "no_scope_expansion_without_decision": true
+    }
+  },
+  "goal": {
+    "one_sentence": "Define a 4-phase battle loop (Declare -> Commit -> Resolve -> Recover) with commitment types and disruption rules for a JRPG proof of concept.",
+    "user": "Solo developer",
+    "problem": "Need a clear, testable battle loop spec to drive a prototype."
+  },
+  "constraints": {
+    "non_negotiables": [
+      "Output is a structured spec, not code changes",
+      "Loop phases are Declare -> Commit -> Resolve -> Recover (exactly 4)",
+      "Commitment types: Instant, Charged, Channeled",
+      "Disruption degrades output; committed skills resolve unless a unit is defeated"
+    ],
+    "non_goals": [
+      "Full game design",
+      "UI implementation",
+      "Networking",
+      "Phase-1 content counts (classes/skills/arenas/items)",
+      "Enemy roles or encounter design"
+    ],
+    "assumptions": [
+      "This is a small proof-of-concept",
+      "Text-based prototype (no UI)"
+    ]
+  },
+  "io": {
+    "inputs": [
+      {
+        "name": "README.md",
+        "type": "text",
+        "source": "filesystem",
+        "notes": "Project context"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "OUTPUT.json",
+        "type": "json",
+        "destination": "filesystem",
+        "notes": "Spec proposal"
+      }
+    ]
+  },
+  "acceptance": {
+    "tests": [
+      {
+        "name": "poc-spec-present",
+        "type": "smoke",
+        "description": "OUTPUT.json includes named phases, commitment types, and the disruption rule."
+      }
+    ],
+    "demo": "Run stella validate -> pack -> run -> eval and produce OUTPUT.json without errors."
+  },
+  "decision_triggers": {
+    "meaningful_change_rules": [
+      "Change loop phases or order",
+      "Change commitment types",
+      "Change disruption rule (degradation vs hard cancels)",
+      "Allow remote provider without explicit approval"
+    ],
+    "examples": [
+      "Removing the Recover phase",
+      "Adding a new commitment type",
+      "Switching to hard cancels on disruption"
+    ]
+  }
+}

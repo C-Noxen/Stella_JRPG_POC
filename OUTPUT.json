@@ -1,0 +1,12 @@
+{
+  "plan": "POC spec: Declare -> Commit -> Resolve -> Recover; commitment types: Instant/Charged/Channeled; disruption degrades output; committed skills resolve unless defeated.",
+  "intent_refs_used": ["CONTRACTS/intent.stella.v0.1.json"],
+  "decision_ids_used": [],
+  "files_changed": [],
+  "diffs": [],
+  "risks": [],
+  "tests_run": ["not run"],
+  "tests_evidence": [],
+  "constraints_conflicts": [],
+  "unknown_allowed": []
+}

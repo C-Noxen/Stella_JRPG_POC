@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "created": "2026-01-29T06:08:57Z",
+      "decision_ids": [],
+      "entry_path": "MEMORY/entries/mem-c8120ebc998ba485dedf4c54cc08016b96df15faee5e50185e7a207458333092.json",
+      "high_stakes": false,
+      "id": "mem-c8120ebc998ba485dedf4c54cc08016b96df15faee5e50185e7a207458333092",
+      "intent_refs": [
+        "CONTRACTS/intent.stella.v0.1.json"
+      ],
+      "review_required": false,
+      "run_hash": "c8120ebc998ba485dedf4c54cc08016b96df15faee5e50185e7a207458333092",
+      "sequence": 1,
+      "summary": "JRPG POC spec generated (4-phase loop + commitments + disruption rule)"
+    }
+  ],
+  "schema": "stella.memory.index.v0.1.1"
+}

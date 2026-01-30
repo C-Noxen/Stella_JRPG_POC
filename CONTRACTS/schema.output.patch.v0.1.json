@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stella.output.contract.patch.v0.1",
+  "title": "Stella Output Contract Patch v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plan",
+    "intent_refs_used",
+    "decision_ids_used",
+    "files_changed",
+    "diffs",
+    "risks",
+    "tests_run",
+    "constraints_conflicts",
+    "unknown_allowed"
+  ],
+  "properties": {
+    "plan": { "type": "string", "minLength": 1 },
+    "intent_refs_used": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "decision_ids_used": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 1 }
+    },
+    "files_changed": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "diffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "diff"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "diff": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "tests_run": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "tests_evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "constraints_conflicts": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "unknown_allowed": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

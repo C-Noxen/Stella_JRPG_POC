@@ -1,0 +1,68 @@
+{
+  "allowed_ops": [],
+  "constraints": {
+    "content": "# Constraints\n- Output is a structured spec (no code changes yet).\n- Loop phases are Declare -> Commit -> Resolve -> Recover (exactly 4).\n- Commitment types: Instant / Charged / Channeled.\n- Disruption degrades output; committed skills resolve unless a unit is defeated.\n- Keep scope to the battle loop only.\n\n## Non-goals\n- Full game design\n- UI implementation\n- Networking or multiplayer\n- Phase-1 content counts (classes/skills/arenas/items)\n- Enemy roles or encounter design\n",
+    "path": "CONSTRAINTS.md",
+    "sha256": "232f97d8ca16e2cd0ed895488dc725078f3bf7c6867264b50d905c844fe305b2"
+  },
+  "contract_refs": [],
+  "decision_ids": [],
+  "decision_refs": [],
+  "decisions_index": {
+    "path": "decisions/index.json",
+    "sha256": "5f6214d7d4bbcc0e7c39daa074ee761e35be71cd3f4e9df93bef15b8d6b5495a"
+  },
+  "exclusions": [
+    ".env",
+    ".env.*",
+    "*.key",
+    "*.pem",
+    "*.crt",
+    "*.p12",
+    "*.pfx",
+    "*.der",
+    "*_secret.*",
+    "*secret*"
+  ],
+  "files": [
+    {
+      "path": "CONSTRAINTS.md",
+      "sha256": "232f97d8ca16e2cd0ed895488dc725078f3bf7c6867264b50d905c844fe305b2"
+    },
+    {
+      "path": "CONTRACTS/intent.stella.v0.1.json",
+      "sha256": "b51b8c67a3f8f3239de27548890067fc95edb95d04e6504abfb3dd15138bb9f3"
+    },
+    {
+      "path": "CONTRACTS/schema.output.patch.v0.1.json",
+      "sha256": "e0e11a85035075aba5cdbb394e7b79e3e4cf2cc38a21db12f4c63e58e9db6056"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8a27038357a6967abc93f6bf14fad4193561f95bd564405d87d7cf1885518618"
+    },
+    {
+      "path": "TODO.md",
+      "sha256": "e5ad44e0a53758275475b7fc396a9bc4209265d01c109b123d3dadf9d96fda0e"
+    },
+    {
+      "path": "decisions/index.json",
+      "sha256": "5f6214d7d4bbcc0e7c39daa074ee761e35be71cd3f4e9df93bef15b8d6b5495a"
+    }
+  ],
+  "gate_decisions": [],
+  "instructions": {
+    "developer": "",
+    "system": "",
+    "user": "Define a 4-phase battle loop (Declare -> Commit -> Resolve -> Recover) with commitment types and disruption rules for a JRPG proof of concept."
+  },
+  "intent_contracts": [
+    {
+      "path": "CONTRACTS/intent.stella.v0.1.json",
+      "sha256": "b51b8c67a3f8f3239de27548890067fc95edb95d04e6504abfb3dd15138bb9f3"
+    }
+  ],
+  "pack_hash": "e2f2ef0278cb99dfb6bed78f7107e2c9c01b474a4ba75d5fe1c0cbb09c063149",
+  "pack_version": "0.1",
+  "redactions": []
+}
