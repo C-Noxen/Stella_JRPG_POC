@@ -1,7 +1,7 @@
 {
   "created": "2026-01-30T06:15:51Z",
   "dec_ref": {
-    "file": "C:\\Users\\Newuser\\Dev\\Stella_JRPG_POC\\decisions\\DEC-0001-first-experiment-run.md",
+    "file": "decisions/DEC-0001-first-experiment-run.md",
     "id": 1
   },
   "decision_ids": [],
@@ -10,7 +10,7 @@
     "eval_version": "0.1",
     "ok": true
   },
-  "high_stakes": true,
+  "high_stakes": false,
   "id": "mem-90ec0771853cb3f718c59f7234b02ed0640b64cbccfec84b9dc9d46cc4c16282",
   "intent_refs": [
     "CONTRACTS/intent.stella.v0.1.json"
@@ -32,8 +32,8 @@
     ],
     "unknown_allowed": []
   },
-  "review_notes": "Pending review",
-  "review_required": true,
+  "review_notes": "Reviewed: Yes",
+  "review_required": false,
   "run": {
     "pack_hash": "e2f2ef0278cb99dfb6bed78f7107e2c9c01b474a4ba75d5fe1c0cbb09c063149",
     "prompt_pack": {
@@ -71,8 +71,10 @@
         }
       ],
       "pack_hash": "e2f2ef0278cb99dfb6bed78f7107e2c9c01b474a4ba75d5fe1c0cbb09c063149",
-      "pack_path": "C:\\Users\\Newuser\\Dev\\Stella_JRPG_POC\\PACK.json",
-      "redactions": []
+      "pack_path": "PACK.json",
+      "redactions": [
+        "absolute_paths"
+      ]
     },
     "provider": "gemini",
     "provider_result": {

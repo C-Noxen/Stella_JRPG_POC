@@ -66,8 +66,10 @@
         }
       ],
       "pack_hash": "e2f2ef0278cb99dfb6bed78f7107e2c9c01b474a4ba75d5fe1c0cbb09c063149",
-      "pack_path": "C:\\Users\\Newuser\\Dev\\Stella_JRPG_POC\\PACK.json",
-      "redactions": []
+      "pack_path": "PACK.json",
+      "redactions": [
+        "absolute_paths"
+      ]
     },
     "provider": "ollama",
     "provider_result": {
