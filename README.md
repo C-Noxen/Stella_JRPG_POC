@@ -26,17 +26,14 @@ Key artifacts produced by Stella in this run:
 - `MEMORY/` - memory entries and index (when written)
 
 ## How these were generated (example)
-In my environment, Stella lives at:
-`C:\Users\Newuser\Dev\Stella`
-
 From the Stella repo root, run against this repo:
 ```powershell
-python -m stella_engine.cli validate --repo C:\Users\Newuser\Dev\Stella_JRPG_POC
-python -m stella_engine.cli pack --repo C:\Users\Newuser\Dev\Stella_JRPG_POC --output C:\Users\Newuser\Dev\Stella_JRPG_POC\PACK.json
-python -m stella_engine.cli run --provider ollama --pack C:\Users\Newuser\Dev\Stella_JRPG_POC\PACK.json --output C:\Users\Newuser\Dev\Stella_JRPG_POC\RUN.json
-python -m stella_engine.cli run --provider gemini --allow-remote --pack C:\Users\Newuser\Dev\Stella_JRPG_POC\PACK.json --output C:\Users\Newuser\Dev\Stella_JRPG_POC\RUN.json
-python -m stella_engine.cli eval --run C:\Users\Newuser\Dev\Stella_JRPG_POC\RUN.json
-python -m stella_engine.cli report --output C:\Users\Newuser\Dev\Stella_JRPG_POC\REPORT-BUNDLE.json
+python -m stella_engine.cli validate --repo <repo-root>
+python -m stella_engine.cli pack --repo <repo-root> --output <repo-root>\PACK.json
+python -m stella_engine.cli run --provider ollama --pack <repo-root>\PACK.json --output <repo-root>\RUN.json
+python -m stella_engine.cli run --provider gemini --allow-remote --pack <repo-root>\PACK.json --output <repo-root>\RUN.json
+python -m stella_engine.cli eval --run <repo-root>\RUN.json
+python -m stella_engine.cli report --output <repo-root>\REPORT-BUNDLE.json
 ```
 
 Notes:

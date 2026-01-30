@@ -1,7 +1,7 @@
 # JRPG POC Run Log
 
 Date: 2026-01-29
-Repo: C:\Users\Newuser\Dev\Stella_JRPG_POC
+Repo: <repo-root>
 
 ## Runs Completed
 - validate -> pack -> run(mock) -> eval
