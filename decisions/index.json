@@ -1,5 +1,12 @@
 {
-  "next_id": 1,
-  "decisions": [],
+  "next_id": 2,
+  "decisions": [
+    {
+      "id": 1,
+      "title": "First official experiment run artifact",
+      "file": "decisions/DEC-0001-first-experiment-run.md",
+      "date": "2026-01-30"
+    }
+  ],
   "created": "2026-01-28"
 }

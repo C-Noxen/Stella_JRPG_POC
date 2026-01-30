@@ -13,6 +13,25 @@
       "run_hash": "c8120ebc998ba485dedf4c54cc08016b96df15faee5e50185e7a207458333092",
       "sequence": 1,
       "summary": "JRPG POC spec generated (4-phase loop + commitments + disruption rule)"
+    },
+    {
+      "created": "2026-01-30T06:15:51Z",
+      "dec_ref": {
+        "file": "C:\\Users\\Newuser\\Dev\\Stella_JRPG_POC\\decisions\\DEC-0001-first-experiment-run.md",
+        "id": 1
+      },
+      "decision_ids": [],
+      "entry_path": "MEMORY/entries/mem-90ec0771853cb3f718c59f7234b02ed0640b64cbccfec84b9dc9d46cc4c16282.json",
+      "high_stakes": true,
+      "id": "mem-90ec0771853cb3f718c59f7234b02ed0640b64cbccfec84b9dc9d46cc4c16282",
+      "intent_refs": [
+        "CONTRACTS/intent.stella.v0.1.json"
+      ],
+      "review_notes": "Pending review",
+      "review_required": true,
+      "run_hash": "90ec0771853cb3f718c59f7234b02ed0640b64cbccfec84b9dc9d46cc4c16282",
+      "sequence": 2,
+      "summary": "First Stella trial run for the JRPG battle-loop POC; same inputs produced two structured outputs (Gemini and Ollama)."
     }
   ],
   "schema": "stella.memory.index.v0.1.1"
