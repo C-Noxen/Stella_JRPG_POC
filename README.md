@@ -39,6 +39,7 @@ python -m stella_engine.cli report --output <repo-root>\REPORT-BUNDLE.json
 Notes:
 - Gemini runs require `--allow-remote` and a valid `GEMINI_API_KEY`.
 - Ollama runs require a local Ollama server and `OLLAMA_HOST` / `OLLAMA_MODEL`.
+- Paths use `<repo-root>` placeholders to avoid machine-local absolute paths.
 
 ## Core loop constraints (from CONSTRAINTS.md)
 - Loop phases are Declare -> Commit -> Resolve -> Recover (exactly 4).
